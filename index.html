@@ -1,0 +1,67 @@
+<!-- Written by Nathan Fiscus
+     Date: 3/19/2019 -->
+
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+      <meta charset="UTF-8">
+      <title>Dev_09</title>
+      <link rel="stylesheet" href="css/style.css">  
+    </head>
+
+    <body>
+        
+      <h1>Elderflower</h1>
+      <div id="content">
+        <div id="greeting" class="message">Hello!</div>
+        <table>
+          <tr>
+            <td>Custom sign: </td>
+            <td id="userSign">
+                <input id='userSignInput' type='text'/>
+            </td>
+          </tr>
+          <tr class="checkboxes">
+            <td>Upgrade Font?</td>
+            <td>
+                <input id="userFont" type="checkbox"/>(+$1 per tile)
+            </td>
+          </tr>
+            <tr class="checkboxes">
+            <td>Upgrade Color?</td>
+            <td>
+                <input id="userColor" type="checkbox"/>(+$1 per tile)
+            </td>
+          </tr>
+          <tr>
+            <td>Total tiles: </td>
+            <td id="tiles"></td>
+          </tr>
+          <tr>
+            <td>Subtotal: </td>
+            <td id="subTotal">$</td>
+          </tr>
+          <tr>
+            <td>Shipping: </td>
+            <td id="shipping">$</td>
+          </tr>
+          <tr>
+            <td>Grand total: </td>
+            <td id="grandTotal">$</td></tr>
+        </table>
+        <a id="confirmOrder" href="#" class="action">Preview & Confirm</a>
+      </div>
+        
+        <div id="previewScreen">
+            <p id="message">Sign is Empty!</p>
+            <a href="#" id="cancelPreview">cancel</a>
+            <a href="#" id="finalConfirm">Confirm</a>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script  src="js/index.js"></script>
+
+    </body>
+
+</html>
